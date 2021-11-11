@@ -10,8 +10,8 @@ var enemyAttack = 12;
 console.log(enemyNames);
 console.log(enemyNames.length);
 console.log(enemyNames[0]);
-console.log(enemyNames[3]);
-
+console.log(enemyNames[2]);
+  debugger;
 // fight function (now with parameter for enemy's name)
 var fight = function(enemyName) {
   while (playerHealth > 0 && enemyHealth > 0) {
@@ -83,7 +83,7 @@ for (var i = 0; i < enemyNames.length; i++) {
     enemyHealth = 50;
 
     // use debugger to pause script from running and check what's going on at that moment in the code
-    // debugger;
+    debugger;
 
     // pass the pickedEnemyName variable's value into the fight function, where it will assume the value of the enemyName parameter
     fight(pickedEnemyName);
@@ -94,3 +94,4 @@ for (var i = 0; i < enemyNames.length; i++) {
     break;
   }
 }
+
