@@ -81,8 +81,9 @@ for (var i = 0; i < enemyNames.length; i++) {
     var pickedEnemyName = enemyNames[i];
 
     // reset enemyHealth before starting new fight
-    enemyHealth = 50;
-
+    enemyHealth = Math.floor(Math.random() * 21) + 40;
+    return value;
+  };
     // pass the pickedEnemyName variable's value into the fight function, where it will assume the value of the enemyName parameter
     fight(pickedEnemyName);
 
